@@ -547,15 +547,6 @@ const bookmarks = [{
 
   ,
   {
-    name: "CSS Background",
-    desc: "live css transformations",
-    url: "https://css-playground.com",
-    tags: ["css",
-      "tool",
-      "utility"
-    ]
-  },
-  {
     name: "CSS Triggers",
     desc: "CSS properties with information about the work they trigger in each modern browser",
     url: "https://csstriggers.com/",
