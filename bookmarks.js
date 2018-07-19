@@ -865,4 +865,18 @@ const bookmarks = [{
       "plugin",
     ]
   }    
+   
+,
+  {
+    name: "Event delegation",
+    desc: "Event delegation jquery and vanilla js",
+    url: "https://gist.github.com/giventofly/288d3f6a4971c60dbd22c88d609da4cc",
+    tags: [
+  
+      "javascript",
+      "snippet",
+    ]
+  }   
+                   
+                   
 ];
