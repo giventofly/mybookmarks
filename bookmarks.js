@@ -841,4 +841,15 @@ const bookmarks = [{
     ]
   }    
   
+                     ,
+  {
+    name: "Popbox.js",
+    desc: "A tiny and simple stackable modal plugin for web apps ",
+    url: "https://github.com/oncebot/popbox.js",
+    tags: [
+       "javascript",
+      "modal",
+      "plugin",
+    ]
+  }    
 ];
