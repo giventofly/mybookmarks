@@ -813,4 +813,32 @@ const bookmarks = [{
       "mockup"
     ]
   }    
+      
+                   ,
+  {
+    name: "Media folder Plugin",
+    desc: "Attach media files to a common parent post, easily upload and list the content of the folder using a shortcode.",
+    url: "https://wordpress.org/plugins/media-folder/",
+    tags: [
+      "plugin",
+      "wordpress",
+ 
+    ]
+  }  
+         
+                   
+  ,
+  {
+    name: "Figma",
+    desc: "Design, prototype, and gather feedback all in one place with Figma.",
+    url: "https://www.figma.com/",
+    tags: [
+       "design",
+      "tool",
+      "utility",
+      "wireframe",
+      "mockup"
+    ]
+  }    
+  
 ];
