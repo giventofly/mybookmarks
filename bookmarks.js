@@ -852,4 +852,17 @@ const bookmarks = [{
       "plugin",
     ]
   }    
+         
+                   
+                     ,
+  {
+    name: "ACF front viewer",
+    desc: "See on the fronend the content of acf fields",
+    url: "https://wordpress.org/plugins/advanced-custom-fields-viewer/",
+    tags: [
+       "acf",
+      "wordpress",
+      "plugin",
+    ]
+  }    
 ];
