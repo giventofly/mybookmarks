@@ -877,6 +877,17 @@ const bookmarks = [{
       "snippet",
     ]
   }   
-                   
+      
+                   ,
+  {
+    name: "geturl params",
+    desc: "vanilla javascript geturl params",
+    url: "https://gist.github.com/giventofly/9dac3a9cacdf7c7f8ae69fb617b54f52",
+    tags: [
+  
+      "javascript",
+      "snippet",
+    ]
+  }  
                    
 ];
