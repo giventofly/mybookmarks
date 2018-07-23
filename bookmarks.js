@@ -911,6 +911,16 @@ const bookmarks = [{
   
     ]
   }                
-                   
+ ,
+  {
+    name: "JavaScript Algorithms",
+    desc: "JavaScript Algorithms and Data Structures",
+    url: "https://github.com/trekhleb/javascript-algorithms/blob/master/README.md",
+    tags: [
+    "javascript",
+          "utility",
+  
+    ]
+  }                
                    
 ];
