@@ -889,5 +889,18 @@ const bookmarks = [{
       "snippet",
     ]
   }  
+                       ,
+  {
+    name: "Performance checklist",
+    desc: "Performance checklist",
+    url: "https://github.com/thedaviddias/Front-End-Performance-Checklist",
+    tags: [
+    "utility",
+          "design",
+      "performance",
+    ]
+  }      
+                   
+                   
                    
 ];
