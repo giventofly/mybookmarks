@@ -949,4 +949,30 @@ const bookmarks = [{
   
     ]
   }   
+     ,
+  {
+    name: "Kenney assets",
+    desc: "sprites and assets",
+    url: "https://kenney.nl/assets",
+    tags: [
+    "design",
+          "game",
+       "stock"
+  
+    ]
+  }   
+     ,
+  {
+    name: "Itch.io",
+    desc: "sprites and assets",
+    url: "https://itch.io/game-assets/free",
+    tags: [
+    "design",
+          "game",
+       "stock"
+  
+    ]
+  }  
+                   
+                   
 ];
