@@ -935,5 +935,18 @@ const bookmarks = [{
   
     ]
   }   
+        
                    
+ ,
+  {
+    name: "Devdocs.io",
+    desc: "DevDocs combines multiple API documentations in a fast, organized, and searchable interface. ",
+    url: "https://devdocs.io/",
+    tags: [
+    "api",
+          "utility",
+       "docs"
+  
+    ]
+  }   
 ];
