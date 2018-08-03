@@ -1111,6 +1111,16 @@ const bookmarks = [{
     "mtg",
 "market",
     ]
+  }  
+                   
+,
+  {
+    name: "Google page speed",
+    desc: "PageSpeed Insights reports on the real-world performance of a page for mobile and desktop",
+    url: "https://developers.google.com/speed/pagespeed/insights",
+    tags: [
+    "performance",
+    ]
   }                
                    
                    
