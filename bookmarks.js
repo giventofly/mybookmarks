@@ -973,6 +973,147 @@ const bookmarks = [{
   
     ]
   }  
+          
+                        ,
+  {
+    name: "The Free Currency Converter API",
+    desc: "The Free Currency Converter API",
+    url: "http://free.currencyconverterapi.com/api/v5/convert?q=EUR_USD&compact=y",
+    tags: [
+    "api",
+          "currency",
+    ]
+  }  
+                            ,
+  {
+    name: "fixer.io",
+    desc: "Foreign exchange rates and currency conversion JSON API ",
+    url: "https://fixer.io/",
+    tags: [
+    "api",
+          "currency",
+    ]
+  }  
+                   
+                                ,
+  {
+    name: "Nano js",
+    desc: "Minimal standalone JS library for DOM manipulation",
+    url: "https://vladocar.github.io/nanoJS/",
+    tags: [
+    "library",
+          "javascript",
+        "dom",
+        "select"
+    ]
+  }                 
+                                          ,
+  {
+    name: "Sizzle",
+    desc: "A pure-JavaScript CSS selector engine",
+    url: "https://sizzlejs.com/",
+    tags: [
+    "library",
+          "javascript",
+        "dom",
+        "select"
+    ]
+  }     
                    
                    
+,
+  {
+    name: "upass",
+    desc: "Unified API for password hashing algorithms",
+    url: "https://github.com/simonepri/upash",
+    tags: [
+    "library",
+          "javascript",
+        "hash",
+       
+    ]
+  }               
+                   
+       ,
+  {
+    name: "Google chart",
+    desc: "Google chart tools are powerful, simple to use, and free. ",
+    url: "https://developers.google.com/chart/?authuser=0",
+    tags: [
+    "library",
+          "javascript",
+        "design",
+        "chart"
+       
+    ]
+  }             
+                   
+        ,
+  {
+    name: "Chartist.js",
+    desc: "Chartist.js Simple responsive charts",
+    url: "https://gionkunz.github.io/chartist-js/",
+    tags: [
+    "library",
+          "javascript",
+        "design",
+        "chart"
+       
+    ]
+  }                    
+                   
+           ,
+  {
+    name: "Chartjs",
+    desc: "Simple yet flexible JavaScript charting for designers & developers",
+    url: "https://www.chartjs.org/",
+    tags: [
+    "library",
+          "javascript",
+        "design",
+        "chart"
+       
+    ]
+  }                 
+                   
+                    ,
+  {
+    name: "echomtg",
+    desc: "EchoMTG is a financial tracking collection tool for people who collect Magic: the Gathering cards",
+    url: "https://www.echomtg.com/",
+    tags: [
+    "mtg",
+          "market",
+ 
+
+    ]
+  }             
+                   
+                           ,
+  {
+    name: "Mtg stocks",
+    desc: "mtgstocks track magic card prices",
+    url: "https://www.mtgstocks.com/news",
+    tags: [
+    "mtg",
+          "market",
+ 
+
+    ]
+  }             
+                   
+                                   ,
+  {
+    name: "Rishadan port",
+    desc: "Europe - World MTG arbitrage",
+    url: "https://rishadan-port.com",
+    tags: [
+    "mtg",
+"market",
+    ]
+  }                
+                   
+                   
+  //end           
+    
 ];
