@@ -1122,7 +1122,29 @@ const bookmarks = [{
     "performance",
     ]
   }                
-                   
+      ,
+  {
+    name: "wordpress social login",
+    desc: "wordpress social login",
+    url: "http://miled.github.io/wordpress-social-login",
+    tags: [
+    "plugin",
+        "social login",
+        "wordpress"
+    ]
+  }                
+             ,
+  {
+    name: "hybridauth php social login",
+    desc: "php social login",
+    url: "https://hybridauth.github.io/",
+    tags: [
+    "plugin",
+        "social login",
+        "php"
+    ]
+  }                
+                  
                    
   //end           
     
