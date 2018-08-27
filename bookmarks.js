@@ -1145,6 +1145,30 @@ const bookmarks = [{
     ]
   }                
                   
+                ,
+  {
+    name: "Interactive and Modern SVG Charts",
+    desc: "php social login",
+    url: "https://apexcharts.com/",
+    tags: [
+    "javascript",
+        "plugin",
+        "charts"
+    ]
+  }                
+                          ,
+  {
+    name: "Vanilla Javascript examples",
+    desc: "plain js utilities",
+    url: "https://plainjs.com/javascript/",
+    tags: [
+    "javascript",
+        "dev",
+        "education"
+    ]
+  }                
+      
+                   
                    
   //end           
     
