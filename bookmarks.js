@@ -490,686 +490,545 @@ const bookmarks = [{
     desc: "Javascript desktop and mobile game library",
     url: "http://phaser.io",
     tags: ["javascript", "game", "library"]
-  }
+  },
 
-  ,
   {
     name: "ACF repeater collapse",
     desc: "plugin solves this problem and add a button to collapse or expand all rows at once",
     url: "https://wordpress.org/plugins/acf-repeater-flexible-content-collapser/",
     tags: ["wordpress", "acf", "plugin"]
-  }
+  },
 
-
-  ,
   {
     name: "Font awesome",
     desc: "library to give icon funcionality",
     url: "https://fontawesome.com",
-    tags: ["design",
-      "library",
-      "fonts"
-    ]
-  }
+    tags: ["design", "library", "fonts"]
+  },
 
-  ,
   {
     name: "dropbox/zxcvbn",
     desc: "dropbox library simple password check",
     url: "https://github.com/dropbox/zxcvbn",
-    tags: ["javascript",
-      "library",
-      "security"
-    ]
-  }
+    tags: ["javascript", "library", "security"]
+  },
 
-  ,
   {
     name: "Phonegap",
     desc: "web development skills to quickly make hybrid applications built with HTML, CSS and JavaScript.",
     url: "https://phonegap.com/",
-    tags: ["mobile",
-      "library",
-      "framework"
-    ]
-  }
+    tags: ["mobile", "library", "framework"]
+  },
 
-  ,
   {
     name: "CSS Background",
     desc: "live css transformations",
     url: "https://css-playground.com",
-    tags: ["css",
-      "tool",
-      "utility"
-    ]
-  }
+    tags: ["css", "tool", "utility"]
+  },
 
-  ,
   {
     name: "CSS Triggers",
     desc: "CSS properties with information about the work they trigger in each modern browser",
     url: "https://csstriggers.com/",
-    tags: ["css",
-      "tool",
-      "performance"
-    ]
+    tags: ["css", "tool", "performance"]
   },
   {
     name: "20 good webfonts",
     desc: "20 best web fonts from google fonts",
     url: "https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html",
-    tags: ["fonts",
-      "design",
-
-    ]
+    tags: ["fonts", "design"]
   },
   {
     name: "Cheatsheets",
     desc: "20 best web fonts from google fonts",
     url: "https://devhints.io/",
-    tags: ["sass",
-      "bash",
-      "tool", "utility", "javascript"
-    ]
-  }
+    tags: ["sass", "bash", "tool", "utility", "javascript"]
+  },
 
-  ,
   {
     name: "Cloudinary",
     desc: "Image page analyser",
     url: "https://webspeedtest.cloudinary.com/",
-    tags: ["image",
-      "tool",
-      "utility", "performance"
-    ]
-  }
+    tags: ["image", "tool", "utility", "performance"]
+  },
 
-  ,
   {
     name: "Waypoints JS",
     desc: "Waypoints is a library that makes it easy to execute a function whenever you scroll to an element. ",
     url: "https://github.com/imakewebthings/waypoints",
-    tags: ["plugin",
-      "javascript",
-      "scroll"
-    ]
-  }
+    tags: ["plugin", "javascript", "scroll"]
+  },
 
-  ,
   {
     name: "8bit art",
     desc: "Make 8bit art",
     url: "https://make8bitart.com/",
-    tags: [
-      "tool",
-      "design",
-      "utility",
-      "design"
-    ]
-  }
+    tags: ["tool", "design", "utility", "design"]
+  },
 
-  ,
   {
     name: "Free Sound",
     desc: "Freesound is a collaborative database of Creative Commons Licensed sounds. ",
     url: "https://freesound.org/",
-    tags: [
-      "audio",
-      "stock",
-      "design"
-    ]
+    tags: ["audio", "stock", "design"]
   },
   {
     name: "Open game art",
     desc: "Open Game Art is a media repository intended for use with free software game projects.",
     url: "https://opengameart.org/",
-    tags: [
-      "video",
-      "stock",
-      "design"
-    ]
+    tags: ["video", "stock", "design"]
   },
   {
     name: "Open clip art",
     desc: "Openclipart is a community and collection of vector clip art that is free content",
     url: "https://openclipart.org/",
-    tags: [
-      "video",
-      "stock",
-      "design"
-    ]
+    tags: ["video", "stock", "design"]
   },
   {
     name: "Socket.io",
     desc: "Socket.IO enables real-time bidirectional event-based communication.",
     url: "https://socket.io/",
-    tags: [
-      "communication",
-      "library",
-      "javascript"
-    ]
-  }
+    tags: ["communication", "library", "javascript"]
+  },
 
-                   
-,
   {
     name: "Purgecss",
     desc: "Remove unused css",
     url: "https://github.com/FullHuman/purgecss",
-    tags: [
-      "css",
-      "performance",
-      "plugin"
-    ]
-  }
+    tags: ["css", "performance", "plugin"]
+  },
 
-                   
-                   ,
   {
     name: "Noun project",
     desc: "Icons",
     url: "https://thenounproject.com/",
-    tags: [
-    
-      "design",
-      "icons"
-    ]
-  }
-     
-,
+    tags: ["design", "icons"]
+  },
+
   {
     name: "Mockaroo",
     desc: "realistic test data in CSV, JSON, SQL, and Excel formats.",
     url: "https://mockaroo.com/",
-    tags: [
-       "stock",
-      "utility",
-      "tool"
-    ]
-  }
-                   
-     ,
+    tags: ["stock", "utility", "tool"]
+  },
+
   {
     name: "Iconfinder",
     desc: "free svg icons",
     url: "https://www.iconfinder.com/",
-    tags: [
-       "icons",
-      "design",
-     
-    ]
-  }
-        ,
+    tags: ["icons", "design"]
+  },
   {
     name: "Diff checker",
     desc: "differences between files",
     url: "https://www.diffchecker.com/",
-    tags: [
-       "tool",
-      "utility",
-     
-    ]
-  }               
-       ,
+    tags: ["tool", "utility"]
+  },
   {
     name: "In-browser Markdown editor",
     desc: "Markdown editor",
     url: "https://stackedit.io/",
-    tags: [
-       "tool",
-      "utility",
-     "markdown"
-    ]
-  }                 
-,
+    tags: ["tool", "utility", "markdown"]
+  },
   {
     name: "compress.io",
     desc: "reduce the size of your images and photos whilst maintaining a high quality with almost no difference before and after compression.",
     url: "https://compressor.io/compress",
-    tags: [
-       "tool",
-      "performance",
-     "image"
-    ]
-  }      
-      
-                   
- ,
+    tags: ["tool", "performance", "image"]
+  },
+
   {
     name: "Repl",
     desc: "test server side code",
     url: "https://repl.it/",
-    tags: [
-       "tool",
-
-    ]
-  }      
-      ,
+    tags: ["tool"]
+  },
   {
     name: "Stylify me",
     desc: "get colors from webpages",
     url: "http://stylifyme.com/",
-    tags: [
-       "tool",
-      "image",
-      "design"
+    tags: ["tool", "image", "design"]
+  },
 
-    ]
-  }                
-      
-                   
-                         ,
   {
     name: "first byte check",
     desc: "The metrics we measure are around the Time To First Byte (TTFB).",
     url: "http://www.bytecheck.com/",
-    tags: [
-       "performance",
-      "tool",
-   
-    ]
-  }   
-                   
- ,
+    tags: ["performance", "tool"]
+  },
+
   {
     name: "Wireframe",
     desc: "webapp wireframe",
     url: "https://wireframe.cc/",
-    tags: [
-       "design",
-      "tool",
-      "utility",
-      "wireframe",
-      "mockup"
-    ]
-  }   
-                   
-,
+    tags: ["design", "tool", "utility", "wireframe", "mockup"]
+  },
+
   {
     name: "Moqups",
     desc: "webapp wireframe",
     url: "https://app.moqups.com",
-    tags: [
-       "design",
-      "tool",
-      "utility",
-      "wireframe",
-      "mockup"
-    ]
-  }    
-  
-                   
-                   
-,
+    tags: ["design", "tool", "utility", "wireframe", "mockup"]
+  },
+
   {
     name: "pingdom",
     desc: "site speed test",
     url: "https://tools.pingdom.com",
-    tags: [
-      "tool",
-      "utility",
-      "performance",
-      "mockup"
-    ]
-  }    
-      
-                   ,
+    tags: ["tool", "utility", "performance", "mockup"]
+  },
+
   {
     name: "Media folder Plugin",
     desc: "Attach media files to a common parent post, easily upload and list the content of the folder using a shortcode.",
     url: "https://wordpress.org/plugins/media-folder/",
-    tags: [
-      "plugin",
-      "wordpress",
- 
-    ]
-  }  
-         
-                   
-  ,
+    tags: ["plugin", "wordpress"]
+  },
+
   {
     name: "Figma",
     desc: "Design, prototype, and gather feedback all in one place with Figma.",
     url: "https://www.figma.com/",
-    tags: [
-       "design",
-      "tool",
-      "utility",
-      "wireframe",
-      "mockup"
-    ]
-  }    
-  
-                     ,
+    tags: ["design", "tool", "utility", "wireframe", "mockup"]
+  },
+
   {
     name: "Popbox.js",
     desc: "A tiny and simple stackable modal plugin for web apps ",
     url: "https://github.com/oncebot/popbox.js",
-    tags: [
-       "javascript",
-      "modal",
-      "plugin",
-    ]
-  }    
-         
-                   
-                     ,
+    tags: ["javascript", "modal", "plugin"]
+  },
+
   {
     name: "ACF front viewer",
     desc: "See on the fronend the content of acf fields",
     url: "https://wordpress.org/plugins/advanced-custom-fields-viewer/",
-    tags: [
-       "acf",
-      "wordpress",
-      "plugin",
-    ]
-  }    
-   
-,
+    tags: ["acf", "wordpress", "plugin"]
+  },
+
   {
     name: "Event delegation",
     desc: "Event delegation jquery and vanilla js",
     url: "https://gist.github.com/giventofly/288d3f6a4971c60dbd22c88d609da4cc",
-    tags: [
-  
-      "javascript",
-      "snippet",
-    ]
-  }   
-      
-                   ,
+    tags: ["javascript", "snippet"]
+  },
+
   {
     name: "geturl params",
     desc: "vanilla javascript geturl params",
     url: "https://gist.github.com/giventofly/9dac3a9cacdf7c7f8ae69fb617b54f52",
-    tags: [
-  
-      "javascript",
-      "snippet",
-    ]
-  }  
-                       ,
+    tags: ["javascript", "snippet"]
+  },
   {
     name: "Performance checklist",
     desc: "Performance checklist",
     url: "https://github.com/thedaviddias/Front-End-Performance-Checklist",
-    tags: [
-    "utility",
-          "design",
-      "performance",
-    ]
-  }      
-                            ,
+    tags: ["utility", "design", "performance"]
+  },
   {
     name: "Api list of librarys and languages",
     desc: "List of apis php, node, javascript, jquery, css, python, etc",
     url: "http://overapi.com",
-    tags: [
-    "api",
-          "library",
-  
-    ]
-  }                
- ,
+    tags: ["api", "library"]
+  },
   {
     name: "JavaScript Algorithms",
     desc: "JavaScript Algorithms and Data Structures",
     url: "https://github.com/trekhleb/javascript-algorithms/blob/master/README.md",
-    tags: [
-    "javascript",
-          "utility",
-  
-    ]
-  }    
-                   
-                    ,
+    tags: ["javascript", "utility"]
+  },
+
   {
     name: "Leaf let js",
     desc: "an open-source JavaScript library for mobile-friendly interactive maps",
     url: "https://leafletjs.com/",
-    tags: [
-    "javascript",
-          "plugin",
-        "maps"
-  
-    ]
-  }   
-        
-                   
- ,
+    tags: ["javascript", "plugin", "maps"]
+  },
+
   {
     name: "Devdocs.io",
     desc: "DevDocs combines multiple API documentations in a fast, organized, and searchable interface. ",
     url: "https://devdocs.io/",
-    tags: [
-    "api",
-          "utility",
-       "docs"
-  
-    ]
-  }   
-     ,
+    tags: ["api", "utility", "docs"]
+  },
   {
     name: "Kenney assets",
     desc: "sprites and assets",
     url: "https://kenney.nl/assets",
-    tags: [
-    "design",
-          "game",
-       "stock"
-  
-    ]
-  }   
-     ,
+    tags: ["design", "game", "stock"]
+  },
   {
     name: "Itch.io",
     desc: "sprites and assets",
     url: "https://itch.io/game-assets/free",
-    tags: [
-    "design",
-          "game",
-       "stock"
-  
-    ]
-  }  
-          
-                        ,
+    tags: ["design", "game", "stock"]
+  },
+
   {
     name: "The Free Currency Converter API",
     desc: "The Free Currency Converter API",
     url: "http://free.currencyconverterapi.com/api/v5/convert?q=EUR_USD&compact=y",
-    tags: [
-    "api",
-          "currency",
-    ]
-  }  
-                            ,
+    tags: ["api", "currency"]
+  },
   {
     name: "fixer.io",
     desc: "Foreign exchange rates and currency conversion JSON API ",
     url: "https://fixer.io/",
-    tags: [
-    "api",
-          "currency",
-    ]
-  }  
-                   
-                                ,
+    tags: ["api", "currency"]
+  },
+
   {
     name: "Nano js",
     desc: "Minimal standalone JS library for DOM manipulation",
     url: "https://vladocar.github.io/nanoJS/",
-    tags: [
-    "library",
-          "javascript",
-        "dom",
-        "select"
-    ]
-  }                 
-                                          ,
+    tags: ["library", "javascript", "dom", "select"]
+  },
   {
     name: "Sizzle",
     desc: "A pure-JavaScript CSS selector engine",
     url: "https://sizzlejs.com/",
-    tags: [
-    "library",
-          "javascript",
-        "dom",
-        "select"
-    ]
-  }     
-                   
-                   
-,
+    tags: ["library", "javascript", "dom", "select"]
+  },
+
   {
     name: "upass",
     desc: "Unified API for password hashing algorithms",
     url: "https://github.com/simonepri/upash",
-    tags: [
-    "library",
-          "javascript",
-        "hash",
-       
-    ]
-  }               
-                   
-       ,
+    tags: ["library", "javascript", "hash"]
+  },
+
   {
     name: "Google chart",
     desc: "Google chart tools are powerful, simple to use, and free. ",
     url: "https://developers.google.com/chart/?authuser=0",
-    tags: [
-    "library",
-          "javascript",
-        "design",
-        "chart"
-       
-    ]
-  }             
-                   
-        ,
+    tags: ["library", "javascript", "design", "chart"]
+  },
+
   {
     name: "Chartist.js",
     desc: "Chartist.js Simple responsive charts",
     url: "https://gionkunz.github.io/chartist-js/",
-    tags: [
-    "library",
-          "javascript",
-        "design",
-        "chart"
-       
-    ]
-  }                    
-                   
-           ,
+    tags: ["library", "javascript", "design", "chart"]
+  },
+
   {
     name: "Chartjs",
     desc: "Simple yet flexible JavaScript charting for designers & developers",
     url: "https://www.chartjs.org/",
-    tags: [
-    "library",
-          "javascript",
-        "design",
-        "chart"
-       
-    ]
-  }                 
-                   
-                    ,
+    tags: ["library", "javascript", "design", "chart"]
+  },
+
   {
     name: "echomtg",
     desc: "EchoMTG is a financial tracking collection tool for people who collect Magic: the Gathering cards",
     url: "https://www.echomtg.com/",
-    tags: [
-    "mtg",
-          "market",
- 
+    tags: ["mtg", "market"]
+  },
 
-    ]
-  }             
-                   
-                           ,
   {
     name: "Mtg stocks",
     desc: "mtgstocks track magic card prices",
     url: "https://www.mtgstocks.com/news",
-    tags: [
-    "mtg",
-          "market",
- 
+    tags: ["mtg", "market"]
+  },
 
-    ]
-  }             
-                   
-                                   ,
   {
     name: "Rishadan port",
     desc: "Europe - World MTG arbitrage",
     url: "https://rishadan-port.com",
-    tags: [
-    "mtg",
-"market",
-    ]
-  }  
-                   
-,
+    tags: ["mtg", "market"]
+  },
+
   {
     name: "Google page speed",
     desc: "PageSpeed Insights reports on the real-world performance of a page for mobile and desktop",
     url: "https://developers.google.com/speed/pagespeed/insights",
-    tags: [
-    "performance",
-    ]
-  }                
-      ,
+    tags: ["performance"]
+  },
   {
     name: "wordpress social login",
     desc: "wordpress social login",
     url: "http://miled.github.io/wordpress-social-login",
-    tags: [
-    "plugin",
-        "social login",
-        "wordpress"
-    ]
-  }                
-             ,
+    tags: ["plugin", "social login", "wordpress"]
+  },
   {
     name: "hybridauth php social login",
     desc: "php social login",
     url: "https://hybridauth.github.io/",
-    tags: [
-    "plugin",
-        "social login",
-        "php"
-    ]
-  }                
-                  
-                ,
+    tags: ["plugin", "social login", "php"]
+  },
+
   {
     name: "Interactive and Modern SVG Charts",
     desc: "php social login",
     url: "https://apexcharts.com/",
-    tags: [
-    "javascript",
-        "plugin",
-        "charts"
-    ]
-  }                
-                          ,
+    tags: ["javascript", "plugin", "charts"]
+  },
   {
     name: "Vanilla Javascript examples",
     desc: "plain js utilities",
     url: "https://plainjs.com/javascript/",
-    tags: [
-    "javascript",
-        "dev",
-        "education"
-    ]
-  }                
-      
-                   
-                   
-  //end           
-    
+    tags: ["javascript", "dev", "education"]
+  },
+
+  //
+  {
+    name: "Vanilla Javascript Guides",
+    desc: "vanilla javascript guides",
+    url: "https://vanillajsguides.com/",
+    tags: ["javascript", "dev", "education"]
+  },
+
+  {
+    name: "Javascript array",
+    desc: "vanilla javascript array",
+    url: "https://dev.to/frugencefidel/10-javascript-array-methods-you-should-know-4lk3",
+    tags: ["javascript", "dev", "education"]
+  },
+  {
+    name: "your-color-picker-is-killing-me-a4cd485ac66f",
+    desc: "Design education color",
+    url: "https://uxplanet.org/your-color-picker-is-killing-me-a4cd485ac66f",
+    tags: ["design", "color", "education"]
+  },
+
+  {
+    name: "Purify css",
+    desc: "A function that takes content (HTML/JS/PHP/etc) and CSS, and returns only the used CSS.",
+    url: "https://github.com/purifycss/purifycss",
+    tags: ["css", "dev", "tool"]
+  },
+  {
+    name: "Create flowcharts",
+    desc: "Create flowcharts",
+    url: "https://www.draw.io/",
+    tags: ["design", "tool", "flowchart"]
+  },
+
+  {
+    name: "awwwarwds webfonts examples",
+    desc: "awwwarwds webfont",
+    url: "https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html",
+    tags: ["design", "fonts"]
+  },
+  {
+    name: "The WordPress Hook/API Indexs",
+    desc: "wordpress hooks and actions",
+    url: "http://hookr.io/",
+    tags: ["wordpress", "tool"]
+  },
+
+  {
+    name: "stack edit in-browser Markdown editor ",
+    desc: "Markdown online",
+    url: "https://stackedit.io/",
+    tags: ["markdown", "tool"]
+  },
+
+  {
+    name: "Vapid static generator",
+    desc: "static generator with backend",
+    url: "https://www.vapid.com/",
+    tags: ["static generator", "tool"]
+  },
+
+  {
+    name: "Pace page loader progress",
+    desc: "js page loader",
+    url: "http://github.hubspot.com/pace/docs/welcome/",
+    tags: ["javascript", "pageloader"]
+  },
+
+  {
+    name: "Socket.io javascript",
+    desc: "socket.io",
+    url: "https://socket.io/",
+    tags: ["javascript", "socket"]
+  },
+
+  {
+    name: "big o cheat sheet",
+    desc: "bigocheatsheet",
+    url: "http://bigocheatsheet.com/",
+    tags: ["bigo", "performance"]
+  },
+
+  {
+    name: "html dom document php",
+    desc: "HTML5 parser for PHP.",
+    url: "https://github.com/ivopetkov/html5-dom-document-php/",
+    tags: ["parser", "php"]
+  },
+
+  {
+    name: "screen resolution stats",
+    desc: "screen-resolution-stats",
+    url: "http://gs.statcounter.com/screen-resolution-stats/",
+    tags: ["screen", "stats", "tool"]
+  },
+
+  {
+    name: "crontab tool",
+    desc: "crontab tool",
+    url: "https://crontab.guru",
+    tags: ["crontab", "tool"]
+  },
+
+  {
+    name: "crontast checker acessibility",
+    desc: "crontast checker",
+    url: "https://webaim.org/resources/contrastchecker/",
+    tags: ["design", "ui ux", "tool", "a11y"]
+  },
+
+  {
+    name: "Sort my list",
+    desc: "sort lists",
+    url: "http://sortmylist.com/",
+    tags: ["tool", "list"]
+  },
+
+  {
+    name: "draw svg",
+    desc: "create svg",
+    url: "http://www.drawsvg.org/",
+    tags: ["tool", "svg", "design"]
+  },
+
+  {
+    name: "portfolio examples",
+    desc: "portfolio examples",
+    url: "https://www.bestfolios.com/portfolios",
+    tags: ["design", "example"]
+  },
+
+  {
+    name: "google charts",
+    desc: "javascript chart",
+    url: "https://developers.google.com/chart/",
+    tags: ["javascript", "chart"]
+  },
+
+  {
+    name: "chartjs",
+    desc: "javascript chart",
+    url: "http://www.chartjs.org/",
+    tags: ["javascript", "chart"]
+  },
+  {
+    name: "zing chart",
+    desc: "javascript chart",
+    url: "https://www.zingchart.com/",
+    tags: ["javascript", "chart"]
+  },
+
+  {
+    name: "high charts",
+    desc: "javascript chart",
+    url: "https://www.highcharts.com/",
+    tags: ["javascript", "chart"]
+  }
+
+  //end
 ];
