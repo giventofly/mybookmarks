@@ -1,6 +1,6 @@
 const bookmarks = [{
     name: "Jose Moreira",
-    url: "http://www.josemoreira.pt",
+    url: "https://josemoreira.pt",
     desc: "it's a me, Mario.",
     tags: ["frontend", "me", "developer"]
   },
@@ -1035,8 +1035,32 @@ const bookmarks = [{
     url: "https://www.twilio.com",
     tags: ["sms", "service"]
   },            
+   
+                   
+         {
+    name: "News api",
+    desc: "Rest api news from the world",
+    url: "https://newsapi.org/",
+    tags: ["news", "api"]
+  }, 
+                   
+                          {
+    name: "Lospect",
+    desc: "The Lospec Palette List is a database of palettes for pixel art",
+    url: "https://lospec.com/palette-list",
+    tags: ["design", "game", "development", "pixel"]
+  }, 
+                   
+ {
+    name: "Dev.ga",
+    desc: "Game development resources",
+    url: "https://devga.me/",
+    tags: ["game", "development","tutorial"]
+  },
+                   
+ 
+                    
                    
                    
-
   //end
 ];
