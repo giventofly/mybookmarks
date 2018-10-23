@@ -1059,8 +1059,47 @@ const bookmarks = [{
   },
                    
  
-                    
+ {
+    name: "Pixel art game",
+    desc: "Pixel art game",
+    url: "http://pixelgameart.org/web/",
+    tags: ["game", "development","assets", "image"]
+  },
                    
+                   {
+    name: "Kronbits",
+    desc: "Kronbits Pixel art game",
+    url: "https://kronbits.itch.io/",
+    tags: ["game", "development","assets", "image"]
+  },
+              
+                       {
+    name: "quaternius",
+    desc: "Game assets",
+    url: "http://quaternius.com",
+    tags: ["game", "development","assets", "image"]
+  },
+      
+ {
+    name: "Game art 2d",
+    desc: "Royalty Free 2d Game Assets",
+    url: "https://www.gameart2d.com/",
+    tags: ["game", "development","assets", "image"]
+  },
                    
+  {
+    name: "Craf Pics",
+    desc: "Royalty Free 2d Game Assets",
+    url: "https://craftpix.net/freebies/",
+    tags: ["game", "development","assets", "image"]
+  },
+                   
+     {
+    name: "Itch.io game assets",
+    desc: "Game Assets",
+    url: "https://itch.io/game-assets/free",
+    tags: ["game", "development","assets", "image"]
+  },
+                  
   //end
 ];
