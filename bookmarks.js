@@ -1100,6 +1100,30 @@ const bookmarks = [{
     url: "https://itch.io/game-assets/free",
     tags: ["game", "development","assets", "image"]
   },
+                   
+                        {
+    name: "fail 2 ban redux",
+    desc: "Game Assets",
+    url: "https://wordpress.org/plugins/wp-fail2ban-redux/",
+    tags: ["wordpress", "plugin","security"]
+  },
+      
+                    {
+    name: "flick it",
+    desc: "slider javascript responsive",
+    url: "https://github.com/metafizzy/flickity",
+    tags: ["javascript", "plugin","slider",]
+  },
+     
+   {
+    name: "matomo",
+    desc: "open source analytics",
+    url: "https://matomo.org/",
+    tags: ["analytics", "opensource"]
+  },
+       
+                   
+                   
                   
   //end
 ];
