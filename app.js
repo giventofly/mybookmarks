@@ -1,65 +1,87 @@
-const createItem = (name, url, tags, desc) => {
-  let hashtags = "";
-  tags.forEach(function (index, element) {
-    hashtags += `<a href='#${tags[element]}' class='tagged' data-tagged='${
-      tags[element]
-      }'>#${tags[element]}</a>`;
-  });
-  const item = ` <tr>
-                <td class="name"><a href='${url}' class='url' target='_blank' rel='noopener' title='${desc}'>${name}</a></td>
-                <td class="tags">${hashtags}</td>
-                <td class="desc active">${desc}</td>
-              </tr>`;
-  return item;
-};
+//min chars to search
+const MINSEARCH = 2;
+let currentJSON = [];
 
-var options = {
-  valueNames: ["name", "url", "tags", "desc"]
-  //page: 30,
-  //pagination: true
-};
+document.addEventListener("DOMContentLoaded", function () {
 
-document.addEventListener("DOMContentLoaded", function (event) {
-  document.querySelector(".description").addEventListener("click", function (e) {
-    e.preventDefault();
-    const descriptions = document.querySelectorAll(".desc");
-    descriptions.forEach(function (element) {
-      //console.log(element);
-      element.classList.toggle("active");
-    });
-  });
-  let list = "";
+  //load on start
+  loadinfo(bookmarks);
+  currentJSON = [...bookmarks];
 
-  bookmarks.forEach(function (index, element) {
-    //console.log(element);
-    list += createItem(
-      bookmarks[element].name,
-      bookmarks[element].url,
-      bookmarks[element].tags,
-      bookmarks[element].desc
-    );
-  });
-  document.getElementById("listcontent").innerHTML = list;
-  //console.log(list);
-  // Init list.js
-  var contactList = new List("bookmarks", options);
-  //catch tags
-  let mytags = document.querySelectorAll(".tagged");
+  const searchinput = document.getElementById('search');
+  const fsearchinput = document.getElementById('tagsearch');
 
-  mytags.forEach(function (element) {
-    //console.log(element);
-    element.addEventListener("click", function (e) {
-      //console.log("click");
-      value = this.dataset.tagged;
-      console.log(value);
-      document.querySelector("input").value = value;
-      contactList.search(value);
-    });
+  //searchinput.addEventListener('change', function(e){ filterme(this,); });
+  searchinput.addEventListener('keyup', function () {
+    this.value.length > MINSEARCH ? filterme(this.value) : loadinfo(bookmarks);
   });
-  //clear on search
-  document.querySelector("#clear").addEventListener("click", function () {
-    document.querySelector("input").value = "";
-    contactList.search();
+  fsearchinput.addEventListener('keyup', function () {
+    this.value.length > MINSEARCH ? filterme(this.value, 'tag') : loadinfo(bookmarks);
   });
+
+  //
+  document.getElementById('container').addEventListener('click', function (e) {
+
+    if (e.target.tagName == 'A' && e.target.dataset.tag) {
+      e.preventDefault();
+      fsearchinput.value = e.target.dataset.tag;
+      filterme(e.target.dataset.tag, 'tag')
+    }
+  });
+
+
+
+  //endloadDOMready
 });
 
+const filterme = (searchv, mode = 'all') => {
+  document.getElementById('container').innerHTML = '';
+  let filesonly = true;
+  let newjson = [];
+  if (mode == 'tag') {
+    bookmarks.forEach(elem => {
+      let mytags = "";
+      elem.tags.forEach((tag) => {
+        mytags += `${tag} `;
+      });
+      if (mycontains(mytags, searchv)) {
+        newjson.push(elem);
+      }
+    });
+  } else {
+    bookmarks.forEach(elem => {
+      if (mycontains(elem.desc, searchv, mode) || mycontains(elem.url, searchv) || mycontains(elem.name, searchv)) {
+        newjson.push(elem);
+      }
+    });
+  }
+
+  currentJSON = [...newjson];
+  //document.getElementById('sortDate').classList.contains('active') ? sortDate(currentJSON) : sortDate(currentJSON, 'des');
+  loadinfo(currentJSON);
+}
+
+const mycontains = (str, search) => {
+  return str.toLowerCase().includes(search.toLowerCase());
+}
+
+
+const loadinfo = json => {
+  document.getElementById('container').innerHTML = '';
+  json.forEach(elem => {
+
+    //console.log(elem);
+    let item = document.createElement('div');
+    item.classList.add('item');
+    let mytags = "";
+    //console.log(elem.tags);
+    elem.tags.forEach((tag) => {
+      mytags += `<a href="" data-tag="${tag}">#${tag}</a>`;
+    });
+    item.innerHTML = ` <div class="item__name"><a href="${elem.url}">${elem.name}</a></div>
+                        <div class="item__description">${elem.desc}</div>
+                        <div class="item__tags">${mytags}</div>
+                `;
+    document.getElementById('container').append(item);
+  });
+}
