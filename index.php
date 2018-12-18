@@ -23,7 +23,7 @@
   <div id="bookmarks">
     <input type="text" class="search" placeholder="Search..." id='search'/>
     <input type="text" class="search" placeholder="Search tags..." id='tagsearch'/>
-    <button class="sort" data-sort="name">Sort by name</button>
+    <!--<button class="sort" data-sort="name">Sort by name</button>-->
   </div>
   <div class="container" id="container"></div>
   
