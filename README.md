@@ -6,6 +6,8 @@ I've made this only for personal use to store my frequently used URLs and give m
 
 * go to ./admin and add a bookmark (don't forget to protect from unauthorized access)
 * delete using id to delete an entry
+* change one tag from one name to another (latest update)
+* edit the tags from one item id (latest update)
 * see and filter the list on the ./
 
 ## TODO
@@ -16,7 +18,7 @@ I've made this only for personal use to store my frequently used URLs and give m
 
 ## How does it?
 
-Using PHP to do the IO of a file then javascript to make the display and filter.
+Using PHP to do the IO of a file (serialize and "JSONifize") then use javascript to make the view and filter.
 
 
 ## Live Link

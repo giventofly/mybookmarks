@@ -37,6 +37,19 @@
       <input type="submit" value="add">
     </form>
   </div>
+  <!-- merge tag -->
+  <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <label for="tagfrom"><input type="text" name="tagfrom" placeholder="tag to replace"></label>
+    <label for="tagto"><input type="text" name="tagto" placeholder="new tag"></label>
+    <input type="submit" value="mergetag">
+  </form>
+  <!-- edit tags from item id -->
+  <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <label for="newtags"><input type="text" placeholder="tags list" name="newtags"></label>
+    <label for="idtoedit"><input type="text" placeholder="id to edit" name="idtoedit"></label>
+    <input type="submit" value="edittags">
+  </form>
+  <!--delete item-->
   <div class="delete">
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
       delete id:<input type="text" name="delete"><br>
@@ -50,35 +63,69 @@
   //read from file
   $newfile = array();
   $read = unserialize(file_get_contents('../bookmarks.json'));
-  //auto backup monthly
+  //auto backup monthly - currently off
   //file_put_contents("./logs/bookmarks.backup.".date('m.Y').".json",serialize(json_encode($read)));
   $newfile = json_decode($read,true);
-
   //file_put_contents("../bookmarks.json",serialize(json_encode($f)));
+
   //post add
   if(isset($_POST['name']) && isset($_POST['url']) && isset($_POST['desc']) && isset($_POST['tags'])) {
     $name = $_POST['name'];
     $url = $_POST['url'];
     $desc = $_POST['desc'];
-    $tags = explode(",",$_POST['tags']);
-  
-  //echo "<pre>".print_r($newfile, true)."</pre>";
-  //append
-  $newfile[] = array('name' => $name, 'url' => $url, 'desc' => $desc, 'tags' => $tags);
-  //save
-  file_put_contents("../bookmarks.json",serialize(json_encode($newfile)));
+    $tags = explode(",",strtolower($_POST['tags']));
+    //append
+    $newfile[] = array('name' => $name, 'url' => $url, 'desc' => $desc, 'tags' => $tags);
+    //save
+    file_put_contents("../bookmarks.json",serialize(json_encode($newfile)));
   }
 
   //post delete
+  //TODO: id check
   if(isset($_POST['delete'])) {
     unset($newfile[$_POST['delete']]);
     file_put_contents("../bookmarks.json",serialize(json_encode($newfile)));
   }
-  
+
+  //merge tags
+  if(isset($_POST['tagfrom']) && isset($_POST['tagto'])) {
+    $tagsreplaced = 0;
+    $from = strtolower($_POST['tagfrom']);
+    $to = strtolower($_POST['tagto']);
+    //search array, check each tag, if equal, replace
+    foreach ($newfile as $id => $value) {
+      //check tags
+      foreach ($value['tags'] as $tagid => $tagvalue) {
+        //tag to change found
+        if($tagvalue == $from) {
+          $newfile[$id]['tags'][$tagid] = $to;
+          $tagsreplaced++;
+         }
+      }
+    }
+    //save new bookmark
+    file_put_contents("../bookmarks.json",serialize(json_encode($newfile)));
+    echo "<h4>replaced $tagsreplaced tags</h4>";
+  }
+
+  //tags edit
+  if(isset($_POST['newtags']) && isset($_POST['idtoedit'])) {
+    //replace tags for id
+    $newfile[$_POST['idtoedit']]['tags'] = explode(",",$_POST['newtags']);
+    file_put_contents("../bookmarks.json",serialize(json_encode($newfile)));
+  }
+
+
+  //show current content:
   $read = unserialize(file_get_contents('../bookmarks.json'));
   //echo "<pre>".print_r(json_decode($read,true), true)."</pre>";
   foreach (json_decode($read,true) as $key => $value) {
-    echo "$key : ". $value['name'] . " (" . $value['url'] . ") <br>";
+    $tags = "";
+    foreach ($value['tags'] as $tkey => $tvalue) {
+      $tags .= " ". $tvalue . ",";
+    }
+    $tags = substr($tags, 0, -1);
+    echo "$key : ". $value['name'] . " (" . $value['url'] . ") [ " . $tags ." ]<br>";
   }
 
   ?>
