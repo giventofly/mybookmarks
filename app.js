@@ -42,11 +42,15 @@ document.addEventListener("DOMContentLoaded", function () {
   //searchinput.addEventListener('change', function(e){ filterme(this,); });
   searchinput.addEventListener('keyup', function () {
     this.value.length > MINSEARCH ? filterme(this.value) : loadinfo(bookmarks);
+    //clear other input
+    fsearchinput.value = '';
     //set urlparam to share
     createShareUrl('s',this.value);
   });
   fsearchinput.addEventListener('keyup', function () {
     this.value.length > MINSEARCH ? filterme(this.value, 'tag') : loadinfo(bookmarks);
+    //clear other input
+    searchinput.value = '';
     //set urlparam to share
     createShareUrl('t',this.value);
   });
