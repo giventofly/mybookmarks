@@ -2,26 +2,57 @@
 const MINSEARCH = 2;
 let currentJSON = [];
 
+
 document.addEventListener("DOMContentLoaded", function () {
+  //inputs
+  const searchinput = document.getElementById('search');
+  const fsearchinput = document.getElementById('tagsearch');
 
   //load on start
   loadinfo(bookmarks);
   currentJSON = [...bookmarks];
 
-  const searchinput = document.getElementById('search');
-  const fsearchinput = document.getElementById('tagsearch');
+  //get param url to filter
+  let urlParams = new URLSearchParams(location.search);
+
+  const createShareUrl = (type,value) => {
+    urlParams.has('s') ? urlParams.delete('s') : null;
+    urlParams.has('t') ? urlParams.delete('t') : null;
+    type === 't'  ? urlParams.set('s',value) : urlParams.set('t',value);
+    //update url link
+    window.history.replaceState({}, '', location.pathname + '?' + type + '=' + value);
+  };
+  
+  //if exists search for it (will assume there is only s or t)
+  if(urlParams.has('s')) {  
+    let value = urlParams.get('s');
+    filterme(value);  
+    //populate the input
+    searchinput.value = value;
+  }
+  if(urlParams.has('t')) {
+    let value = urlParams.get('t');
+    filterme(value,'tag');
+    //populate the input
+    fsearchinput.value = value;
+  } 
+
+
 
   //searchinput.addEventListener('change', function(e){ filterme(this,); });
   searchinput.addEventListener('keyup', function () {
     this.value.length > MINSEARCH ? filterme(this.value) : loadinfo(bookmarks);
+    //set urlparam to share
+    createShareUrl('s',this.value);
   });
   fsearchinput.addEventListener('keyup', function () {
     this.value.length > MINSEARCH ? filterme(this.value, 'tag') : loadinfo(bookmarks);
+    //set urlparam to share
+    createShareUrl('t',this.value);
   });
 
   //
   document.getElementById('container').addEventListener('click', function (e) {
-
     if (e.target.tagName == 'A' && e.target.dataset.tag) {
       e.preventDefault();
       fsearchinput.value = e.target.dataset.tag;
@@ -33,6 +64,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //endloadDOMready
 });
+
+
 
 const filterme = (searchv, mode = 'all') => {
   document.getElementById('container').innerHTML = '';

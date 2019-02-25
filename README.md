@@ -4,16 +4,22 @@ I've made this only for personal use to store my frequently used URLs and give m
 
 ## How to use ?
 
-* go to ./admin and add a bookmark (don't forget to protect from unauthorized access)
+* go to /admin (don't forget to protect from unauthorized access)
 * add bookmark
 * delete bookmark using id to delete an entry
-* change one tag from one name to another (latest update)
-* edit the tags from one bookmark (latest update)
-* see and filter the list on the ./
+* change one tag from one name to another
+* edit the tags from one bookmark
+* see and filter the list on the /
+* can share a filter option copying the url
+
+## Latest updates
+
+* Option to share url from filter (search or tag) - only work on modern browsers: safarIE < 10 excluded [here](https://caniuse.com/#search=URLSearchParams)
 
 ## TODO
 
 * better filter algorithm - maybe hide/show using a class instead of refactor all the DOM - lets learn something from REACT :) 
+* search more than one tag at a time
 * limit the number of visible entries
 * it satisfies my needs so i don't have anything more planned.
 
