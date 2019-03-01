@@ -84,7 +84,14 @@
   //TODO: id check
   if(isset($_POST['delete'])) {
     unset($newfile[$_POST['delete']]);
-    file_put_contents("../bookmarks.json",serialize(json_encode($newfile)));
+    //reset id order
+    $savearr = [];
+    $i = 0;
+    foreach ($newfile as $value) {
+      $savearr[$i] = $value;
+      $i++;
+    }
+    file_put_contents("../bookmarks.json",serialize(json_encode($savearr)));
   }
 
   //merge tags
