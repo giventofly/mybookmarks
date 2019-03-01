@@ -12,7 +12,7 @@ I've made this only for personal use to store my frequently used URLs and give m
 * see and filter the list on the /
 * can share a filter option copying the url
 
-## Latest updates
+## Latest upgrades
 
 * Option to share url from filter (search or tag) - only work on modern browsers: safarIE < 10 excluded [here](https://caniuse.com/#search=URLSearchParams)
 
@@ -32,7 +32,8 @@ Using PHP to do the IO of a file (serialize and "JSONifize") then use javascript
 
 [here](https://josemoreira.pt/bookmarks)
 
-## small changelog
+
+## small bugfix log
 
 * (...)
 * fixed problem when deleting bookmark with id 0
