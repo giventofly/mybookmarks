@@ -31,3 +31,8 @@ Using PHP to do the IO of a file (serialize and "JSONifize") then use javascript
 ## Live Link
 
 [here](https://josemoreira.pt/bookmarks)
+
+## small changelog
+
+* (...)
+* fixed problem when deleting bookmark with id 0
