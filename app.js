@@ -60,7 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (e.target.tagName == 'A' && e.target.dataset.tag) {
       e.preventDefault();
       fsearchinput.value = e.target.dataset.tag;
-      filterme(e.target.dataset.tag, 'tag')
+      filterme(e.target.dataset.tag, 'tag');
+      createShareUrl('t',e.target.dataset.tag);
     }
   });
 
